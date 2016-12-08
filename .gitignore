@@ -1,0 +1,8 @@
+# Scans
+scans/*.jpg
+
+# Originales XML
+original/*.xml
+
+# MacOS-Systemdatei
+.DS_store
