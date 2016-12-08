@@ -1,8 +1,12 @@
 # Scans
 scans/*.jpg
+scans/*.jpeg
+scans/*.JPG
+scans/*.JPEG
 
 # Originales XML
 original/*.xml
+original/*.XML
 
 # MacOS-Systemdatei
 .DS_store
