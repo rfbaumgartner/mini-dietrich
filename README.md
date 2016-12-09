@@ -9,5 +9,8 @@ Ordner:
 * `original`  
   Hier kann das Original-XML abgelegt werden. Es wird ebenfalls nicht hochgeladen.
   
+* `kae`
+  XML-Dateien der Mini-Edition in unserer Bearbeitung
+
 * weitere Ordner:  
-  Ihr könnt weitere Ordner erstellen und mit XML und XSLT experimentieren.
+  Struktur von tiny-edition-jekyll übernehmen
