@@ -10,3 +10,4 @@ original/*.XML
 
 # MacOS-Systemdatei
 .DS_store
+*~
