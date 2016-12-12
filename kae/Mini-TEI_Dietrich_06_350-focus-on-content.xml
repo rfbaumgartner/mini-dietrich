@@ -9,122 +9,207 @@
                 <author>Pater Joseph Dietrich</author>
             </titleStmt>
             <publicationStmt>
-                <p>Kommentierte Edition</p>        
+                <p>Inhaltsfokussierte Transkription zur Manuskriptseite KAE A HB.6-350 zur Eruierung eins geeigneten Transkriptionsschemas</p>        
             </publicationStmt>
             <sourceDesc>
-                <p>Klosterarchiv Einsiedeln KAE A HB.03b</p>
+                <p>Klosterarchiv Einsiedeln KAE A HB.6</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
-            <div type="year"> <!-- usually a division for a year. here it is 1687 -->
+            <div n="1687" type="year"> <!-- usually a division for a year. here it is 1687 -->
                 <head>1687</head>
                 
-                
-                <div type="month"> <!-- usually a division for a month. here it is september -->
+                <div n="1687-09" type="month"> <!-- usually a division for a month. here it is september -->
                     
                     <head>September</head>
                     <pb n="341" facs="KAE_A_HB_6-0350.jpg" />
                     
-                    <add>
-                        <lb n="1" x="143" y="386" w="137" h="-402" /><pag value="[6_339]">[339]</pag>
-                    </add>
-                    <label>
-                        <lb n="2" x="143" y="36" w="137" h="16" /><foreign lang="lat" trans_lang="de" trans="Engelweihe">Ded[icatio] Angel[ica]</foreign>
-                    </label>
-                    <label>
+                    <fw type="pageNum" place="top-right" hand="bleistiftpaginierung" n="[6_339]">[339]</fw>
+                    
+                    <fw type="header" place="top-right">
+                        <lb n="2" x="143" y="36" w="137" h="16" />
+                        <foreign rend="italic" xml:id="hb6-0350-aa" xml:lang="lat">Ded[icatio] Angel[ica]</foreign>
+                        <gloss target="#hb6-0350-aa" xml:lang="de">Engelweihe</gloss>
+                    </fw>
+                    <fw type="header" place="top-right">
                         <lb n="3" x="143" y="52" w="137" h="47" /><hi rend="underline">1687</hi>
-                    </label>
-                    
-                    
-                    <div type="entry"> <!-- usually an entry for a specific day, here it is a summary of a longer time -->
+                    </fw>
+                           
+                    <div n="1687-09-a" type="entry"> <!-- usually an entry for a specific day, here it is a summary of a longer time -->
                         <div type="section">
                         <p>
-                            <lb n="1" x="2" y="22" w="137" h="39" /><note type="gloss"  source="Idiotikon (Bd. 2, Sp. 1363): abendlich, sich auf heutige Nacht beziehend.">mithinigen</note> Abendt- vnnd Extra Trünken dar-
+                            <lb n="1" x="2" y="22" w="137" h="39" />
+                            <term type="gloss" xml:id="hb6-0350-ab">mithinigen</term>
+                            <gloss target="#hb6-0350-ab" cRef="Idiotikon (Bd. 2, Sp. 1363)">abendlich, sich auf heutige Nacht beziehend.</gloss> 
+                            Abendt- vnnd Extra Trünken dar-
                             <lb n="2" x="2" y="61" w="137" h="12" />auf gangen 
-                            <group rend="braced">
-                                <text>
-                                    Ehrenwein  -- 19 Eÿm[er]. Darunder
-                                    <lb n="3" x="2" y="74" w="137" h="5" />ein Eymer Mesßwin
-                                </text>
-                                <text>
-                                    <lb n="4" x="2" y="79" w="137" h="11" />-- -- -- -- gemeiner Tisch-Wein 20 Eym[er]. -- -- --
-                                    
-                                </text>
-                                <text>
-                                    <lb n="5" x="2" y="91" w="137" h="7" />-- -- -- -- -- <hi rend="italic">Communion</hi> Wein -- 14 Eÿm[er].
-                                    
-                                </text>
-                                <text role="sum">
+                            <list>
+                                <head rend="braced">
                                     53
-                                </text>
-                                
-                                
-                                
-                            </group>
-                            
-                                
-                            
-                            
-                            <lb n="6" x="2" y="98" w="137" h="17" /><foreign lang="lat" trans_lang="de" trans="insgesamt">Summa Sum[marum]</foreign> alles Weins,
+                                </head>
+                                <label>
+                                    Ehrenwein —
+                                    <add>
+                                        Darunder
+                                        <lb n="3" x="2" y="74" w="137" h="5" />ein Eymer Mesßwin
+                                    </add>
+                                </label>
+                                <item>
+                                    19 Eÿm[er].
+                                </item>
+                                <label>
+                                    <lb n="4" x="2" y="79" w="137" h="11" />— — — — gemeiner Tisch-Wein 
+                                </label>
+                                <item>
+                                    20 Eym[er].  
+                                </item>
+                                <label>
+                                    <lb n="5" x="2" y="91" w="137" h="7" />— — — — — <hi rend="italic">Communion</hi> Wein —
+                                </label>
+                                <item>
+                                    14 Eÿm[er].                                
+                                </item>
+                            </list>
+                            <lb n="6" x="2" y="98" w="137" h="17" />
+                            <foreign rend="italic" xml:id="hb6-0350-ac" xml:lang="lat">Summa Sum[marum]</foreign>
+                            <gloss target="#hb6-0350-ac" xml:lang="de">insgesamt</gloss> 
+                            alles Weins,
                             <lb n="7" x="2" y="115" w="137" h="12" />so in der Engelw[eihe]. verbraucht
-                            <lb n="8" x="2" y="127" w="137" h="18" />ist worden, ist -- -- -- 122 Eÿm[er]. 20 Mass.
+                            <lb n="8" x="2" y="127" w="137" h="18" />ist worden, ist — — — 122 Eÿm[er]. 20 Mass.
                         </p>
                         </div>
                         <div type="section">
                             <head><lb n="9" x="2" y="145" w="137" h="18" />An Mähl</head>
                             <p>
                                 
-                                <group rend="braced">
-                                    <text>
-                                        <lb n="10" x="2" y="163" w="137" h="16" />Weisses verbachen 43 Mütt
-                                     </text>
-                                    <text>
-                                        <lb n="11" x="2" y="180" w="137" h="14" />-- -- schwarzes -- 73 Mütt
-                                    </text>
-                                    <text>
-                                        <lb n="13" x="2" y="200" w="137" h="9" />-- -- in Kuchi geben 4 Mütt Weisß
-                                    </text>
-                                    <text role="sum">
+                                <list>
+                                    <head rend="braced">
                                         <lb n="12" x="2" y="194" w="137" h="6" /> 120 Mütt
-                                    </text>
-                                </group>
+                                    </head>
+                                    <label>
+                                        <lb n="10" x="2" y="163" w="137" h="16" />Weisses verbachen
+                                    </label>
+                                    <item>
+                                        43 Mütt
+                                    </item>
+                                    <label>
+                                        <lb n="11" x="2" y="180" w="137" h="14" />— — schwarzes —
+                                    </label>
+                                    <item>
+                                        73 Mütt
+                                    </item>
+                                    <label>
+                                        <lb n="13" x="2" y="200" w="137" h="9" />— — in Kuchi geben 
+                                    </label>
+                                    <item>
+                                        4 Mütt Weisß
+                                    </item>
+                                </list>
                             </p>
                             <p>
                                 <lb n="14" x="2" y="209" w="137" h="20" />Das Weissgebachen hatt geben, vnnd seÿnd ver-
                                 <lb n="15" x="2" y="230" w="137" h="15" />braucht 
-                                <group>
-                                    <note type="gloss" source="Idiotikon (Bd. 4, Sp. 604): kleiner Laib, Festbrötchen.">Mutschlin</note> 2860 paar.
-                                    <lb n="16" x="2" y="245" w="137" h="12" />-- -- Herren Brodt 2400 Brodt.
-                                </group>
+                                <list>
+                                    <label>
+                                        <term type="gloss" xml:id="hb6-0350-ba">Mutschlin</term>
+                                        <gloss target="#hb6-0350-ba" cRef="Idiotikon (Bd. 4, Sp. 604)">kleiner Laib, Festbrötchen.</gloss> 
+                                    </label>
+                                    <item>
+                                        2860 paar.
+                                    </item>
+                                    <label>
+                                        <lb n="16" x="2" y="245" w="137" h="12" />— — Herren Brodt 
+                                    </label>
+                                    <item>
+                                        2400 Brodt.
+                                    </item>
+                                </list>
                             </p>
                             <p>
                                 <lb n="17" x="2" y="257" w="137" h="15" />Schwarz Schirmer Brodt, seÿnd etwas
                                 <lb n="18" x="2" y="272" w="137" h="13" />grösser als Knechtenbrodt seÿnd in obige gerechnet.
-                                <group>
-                                    <lb n="19" x="2" y="285" w="137" h="15" />-- Knechtenbrodt 6924 Brodt.  
-                                </group>                     
+                                <list>
+                                    <label>
+                                        <lb n="19" x="2" y="285" w="137" h="15" />— Knechtenbrodt 
+                                    </label>
+                                    <item>
+                                        6924 Brodt. 
+                                    </item>
+                                </list>                     
                             </p> 
                         </div>
                         <div type="section">
-                            <lb n="20" x="2" y="300" w="137" h="22" /><hi rend="italic">Item</hi> an <note type="gloss" source="Idiotikon (Bd. 1, Sp. 348): Tierfett.">Vnschlitt</note> Kerzen wenigist 100 Pfund.
-                            <lb n="21" x="2" y="323" w="137" h="13" />-- -- gesottnem Anken 600 Pf[und]
-                            <lb n="22" x="2" y="336" w="137" h="7" />1165 Pf[und]
-                            <lb n="23" x="2" y="343" w="137" h="12" />-- --frischem Anken -- -- -- 565 Pf[und]
+                            <p>
+                                <lb n="20" x="2" y="300" w="137" h="22" />
+                                <hi rend="italic">Item</hi> an 
+                                <term type="gloss" xml:id="hb6-0350-ca">Vnschlitt</term>
+                                <gloss target="#hb6-0350-ca" cRef="Idiotikon (Bd. 1, Sp. 348)">Tierfett.</gloss> 
+                                Kerzen wenigist 100 Pfund.
+                                <list>
+                                    <head rend="braced">
+                                        <lb n="22" x="2" y="336" w="137" h="7" />1165 Pf[und]
+                                    </head>
+                                    <label>
+                                        <lb n="21" x="2" y="323" w="137" h="13" />— — gesottnem Anken 
+                                    </label>
+                                    <item>
+                                        600 Pf[und]
+                                    </item>
+                                    <label>
+                                        <lb n="23" x="2" y="343" w="137" h="12" />— —frischem Anken — — —
+                                    </label>
+                                    <item>
+                                        565 Pf[und]
+                                    </item>
+                                </list>
+                            </p>
                         </div>    
                         <div type="section">
-                            <lb n="24" x="2" y="356" w="137" h="26" />Item an erkauften Fischen 895 ½ Pf[und]
-                            <lb n="25" x="2" y="382" w="137" h="11" />-- -- -- -- -- 2888 Stuk <note type="gloss" source="Idiotikon (Bd. 2, Sp. 749): frisch (im Gegensatz zu 'dürr').">grüene</note> <glossar source="Idiotikon (Bd. 1, Sp. 185): Albek, Albich; Fischart.">Albelin</glossar>.
-                            
+                            <p>
+                                <lb n="24" x="2" y="356" w="137" h="26" />Item an erkauften Fischen 895 ½ Pf[und]
+                                <list>
+                                    <item>
+                                        <lb n="25" x="2" y="382" w="137" h="11" />— — — — — 2888 Stuk 
+                                        <term type="gloss" xml:id="hb6-0350-da">grüene</term>
+                                        <gloss target="#hb6-0350-da" cRef="Idiotikon (Bd. 2, Sp. 749)">frisch (im Gegensatz zu 'dürr').</gloss>
+                                        <term type="gloss" xml:id="hb6-0350-db">Albelin</term>
+                                        <gloss target="#hb6-0350-db" cRef="Idiotikon (Bd. 1, Sp. 185)">Albek, Albich; Fischart.</gloss>.
+                                    </item>
+                                </list>
+                            </p>
                         </div>
                         <div type="section">
-                            <lb n="26" x="2" y="393" w="137" h="18" />Item an Gflügel <note type="gloss" source="Kapaun; Kastrierter Masthahn.">Capaunen</note> 57 Stuk
-                            <lb n="27" x="2" y="411" w="137" h="13" />-- an <note type="gloss" source="Brockhaus (Bd. 2, S. 969): Truthühner.">Welsche Hennen vnnd Hanen</note> 53 St[uk].
-                            <lb n="28" x="2" y="425" w="137" h="13" />--Gänß -- -- -- -- 6  St[uk].
-                            <secFol><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</secFol>
+                            <p>
+                                <lb n="26" x="2" y="393" w="137" h="18" />Item an Gflügel 
                             
+                                <list>
+                                    <label>
+                                        <term type="gloss" xml:id="hb6-0350-ea">Capaunen</term>
+                                        <gloss target="#hb6-0350-ea">Kapaun; Kastrierter Masthahn.</gloss>
+                                    </label>
+                                    <item>
+                                        57 Stuk
+                                    </item>
+                                    <label>
+                                        <lb n="27" x="2" y="411" w="137" h="13" />— an 
+                                        <term type="gloss" xml:id="hb6-0350-eb">Welsche Hennen vnnd Hanen</term>
+                                        <gloss target="#hb6-0350-eb" cRef="Brockhaus (Bd. 2, S. 969)">Truthühner.</gloss>
+                                    </label>
+                                    <item>
+                                        53 St[uk].
+                                    </item>
+                                    <label>
+                                        <lb n="28" x="2" y="425" w="137" h="13" />— Gänß — — — —
+                                    </label>
+                                    <item>
+                                        6  St[uk].
+                                    </item>
+                                </list>
+                            </p>
                         </div>
+                        <secFol><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</secFol>
                     </div>         
                 </div>          
             </div>
