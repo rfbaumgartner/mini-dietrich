@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="kae.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -45,8 +46,8 @@
                             <gloss target="#hb6-0350-ab" cRef="Idiotikon (Bd. 2, Sp. 1363)">abendlich, sich auf heutige Nacht beziehend.</gloss> 
                             Abendt- vnnd Extra Trünken dar-
                             <lb n="2" x="2" y="61" w="137" h="12" />auf gangen 
-                            <list>
-                                <head rend="braced">
+                            <list rend="braced">
+                                <head>
                                     53
                                 </head>
                                 <label>
@@ -84,8 +85,8 @@
                             <head><lb n="9" x="2" y="145" w="137" h="18" />An Mähl</head>
                             <p>
                                 
-                                <list>
-                                    <head rend="braced">
+                                <list rend="braced">
+                                    <head>
                                         <lb n="12" x="2" y="194" w="137" h="6" /> 120 Mütt
                                     </head>
                                     <label>
@@ -147,8 +148,8 @@
                                 <term type="gloss" xml:id="hb6-0350-ca">Vnschlitt</term>
                                 <gloss target="#hb6-0350-ca" cRef="Idiotikon (Bd. 1, Sp. 348)">Tierfett.</gloss> 
                                 Kerzen wenigist 100 Pfund.
-                                <list>
-                                    <head rend="braced">
+                                <list rend="braced">
+                                    <head>
                                         <lb n="22" x="2" y="336" w="137" h="7" />1165 Pf[und]
                                     </head>
                                     <label>
