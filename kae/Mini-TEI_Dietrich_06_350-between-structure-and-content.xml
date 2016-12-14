@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Acta Diarium Rerum memorabilium Monasterii Beatae Virginis Einsidlensis Annis 1687 et 1688</title>
+                <author>Pater Joseph Dietrich</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Inhaltsfokussierte Transkription zur Manuskriptseite KAE A HB.6-350 zur Eruierung eins geeigneten Transkriptionsschemas</p>        
+            </publicationStmt>
+                <sourceDesc>
+                    <p>Klosterarchiv Einsiedeln KAE A HB.6</p>
+                </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="1687" type="year"> <!-- usually a division for a year. here it is 1687 -->
+                <head>1687</head>
+                    
+                <div n="1687-09" type="month"> <!-- usually a division for a month. here it is september -->
+                        
+                    <head>September</head>
+                    <pb n="341" facs="KAE_A_HB_6-0350.jpg" />
+                        
+                    <fw type="pageNum" place="top-right" hand="bleistiftpaginierung" n="[6_339]">[339]</fw>
+                        
+                    <fw type="header" place="top-right">
+                        <lb n="2" x="143" y="36" w="137" h="16" />
+                        <foreign rend="italic" xml:id="hb6-0350-aa" xml:lang="lat">
+                            <choice>
+                                <abbr>Ded. Angel.</abbr>
+                                <expan>Dedicatio Angelica</expan>
+                            </choice>
+                        </foreign>
+                        <gloss target="#hb6-0350-aa" xml:lang="de">Engelweihe</gloss>
+                    </fw>
+                    <fw type="header" place="top-right">
+                        <lb n="3" x="143" y="52" w="137" h="47" /><hi rend="underline">1687</hi>
+                    </fw>
+                    
+                    <div n="1687-09-a" type="entry"> <!-- usually an entry for a specific day, here it is a summary of a longer time -->
+                        <div type="section">
+                            <p>
+                                <lb n="1" x="2" y="22" w="137" h="39" />
+                                <term type="gloss" xml:id="hb6-0350-ab">mithinigen</term>
+                                <gloss target="#hb6-0350-ab" cRef="Idiotikon (Bd. 2, Sp. 1363)">abendlich, abbrh auf heutige Nacht beziehend.</gloss> 
+                                Abendt- vnnd Extra Trünken dar-
+                    <!-- bis hierhin von Reto übernommen; zur Dedicatio Angelica choice ergänzt -->
+                    
+                                <lb n="2" x="2" y="61" w="137" h="12" />
+                                
+                                   <table rows="6" cols="5">
+                                       <row role="data">
+                                           <cell role="data">
+                                               auf gangen
+                                           </cell>
+                                           <cell role="data">
+                                               Ehrenwein
+                                           </cell>        
+                                           <cell role="data">
+                                               19 
+                                               <choice>
+                                                   <abbr>Eÿm.</abbr>
+                                                   <expan>Eÿmer</expan>
+                                               </choice>
+                                               <add>
+                                                   Darunder ein Eÿmer Mesßwin
+                                               </add>
+                                           </cell>
+                                           <cell cols="3">
+                                               }
+                                           </cell>
+                                           <cell cols="3">
+                                               53
+                                               <add>
+                                                   Eÿmer <!-- Eingriff durch Edition -->
+                                               </add>
+                                           </cell>
+                                       </row>
+                                       
+                                       <lb n="3" x="2" y="79" w="137" h="11" /> 
+                                       <row role="data">
+                                           <cell role="data">
+                                               — — — —
+                                           </cell>
+                                           <cell role="data">
+                                               gemeiner 
+                                               <add>
+                                                   Tisch-
+                                               </add>
+                                               Wein
+                                           </cell>
+                                           <cell role="data">
+                                               20
+                                               <choice>
+                                                   <abbr>Eym.</abbr>
+                                                   <expan>Eymer</expan>
+                                               </choice>
+                                           </cell>
+                                       </row>      
+                                       
+                                       <lb n="4" x="2" y="91" w="137" h="7" />
+                                       <row role="data">
+                                           <cell role="data">
+                                               — — — — —
+                                           </cell>
+                                           <cell role="data">
+                                               <hi rend="italic">Communion</hi> Wein—
+                                           </cell>
+                                           <cell role="data">
+                                               14
+                                               <choice>
+                                                   <abbr>Eÿm.</abbr>
+                                                   <expan>Eÿmer</expan>
+                                               </choice>
+                                           </cell>
+                                       </row>
+                                       
+                                       <lb n="5" x="2" y="98" w="137" h="17" />
+                                       <row role="data">
+                                           <cell rows="4">                                               
+                                                   <hi rend="italic">Summa 
+                                                   <choice>
+                                                       <abbr>Summ<hi rend="superscript">arum</hi></abbr>
+                                                       <expan>Summarum</expan>
+                                                   </choice>
+                                                   </hi>                                                 
+                                                   alles Weins, 
+                                       <lb n="6" x="2" y="115" w="137" h="12" />
+                                                   so in der
+                                                   <choice>
+                                                       <abbr>Engelw.</abbr>
+                                                       <expan>Engelweihe</expan>
+                                                   </choice>
+                                               verbraucht 
+                                       <lb n="7" x="2" y="127" w="137" h="18" />
+                                               ist worden, ist
+                                           </cell>
+                                           <cell role="data">
+                                               122
+                                               <choice>
+                                                   <abbr>Eÿm.</abbr>
+                                                   <expan>Eÿmer</expan>
+                                               </choice> 
+                                               20 Mass.
+                                           </cell>
+                                       </row>
+                                   </table>
+                            </p> 
+                            </div>
+                        
+                            <div type="section">
+                                <head><lb n="8" x="2" y="145" w="137" h="18" />An Mähl</head>
+                            <p>
+                                <lb n="9" x="2" y="163" w="137" h="16" />
+                                
+                                <table rows="4" cols="3">
+                                      <row role="data">
+                                          <cell role="data">
+                                              Weisses verbachen
+                                          </cell>
+                                          <cell role="data">
+                                              43 Mütt
+                                          </cell>
+                                          <cell cols="3">
+                                              }
+                                          </cell>
+                                          <cell cols="3">
+                                              120 Mütt
+                                          </cell>
+                                      </row>
+                                    
+                                <lb n="10" x="2" y="180" w="137" h="14" />
+                                      <row role="data">
+                                          <cell role="data">— — schwarzes—</cell>
+                                          <cell role="data">
+                                              73 Mütt
+                                          </cell>
+                                      </row>
+                                <lb n="11" x="2" y="200" w="137" h="9" />
+                                      <row role="data">
+                                          <cell role="data">
+                                              — — in Kuchi geben
+                                          </cell>
+                                          <cell role="data">
+                                              4 Mütt Weisß
+                                          </cell>
+                                      </row>
+                                </table>
+                            </p>    
+                            </div>    
+                            
+                            <div type="section">
+                            <p>
+                               <lb n="12" x="2" y="209" w="137" h="20" />
+                                Das Weissgebachen hatt geben, vnnd seÿnd ver-
+                               
+                               <lb n="13" x="2" y="230" w="137" h="15" />
+                               
+                               <table rows="3" cols="2">
+                                   <row role="data">
+                                       <cell role="data">
+                                           braucht
+                                       </cell>
+                                       <cell role="data">
+                                           Mutschlin
+                                       </cell>
+                                       <cell role="data">
+                                           2860 paar.
+                                       </cell>
+                                   </row>
+                               <lb n="14" x="2" y="245" w="137" h="12" />     
+                                   <row role="data">
+                                       <cell role="data">
+                                       — —    
+                                       </cell>
+                                       <cell role="data">
+                                           Herren Brodt
+                                       </cell>
+                                       <cell role="data">
+                                           2400 Brodt.
+                                       </cell>
+                                   </row>  
+                                <lb n="15" x="2" y="257" w="137" h="15" />         
+                                   <row role="data">
+                                       <cell rows="3">
+                                           Schwarz Schirmer Brodt, seÿnd etwas 
+                                <lb n="16" x="2" y="272" w="137" h="13" />      
+                                           grösser als Knechtenbrodt seÿnd in obige gerechnet.
+                                       </cell>
+                                   </row>
+                                <lb n="17" x="2" y="285" w="137" h="15" />   
+                                   <row role="data">
+                                       <cell role="data">
+                                           —
+                                       </cell>
+                                       <cell role="data">
+                                           Knechtenbrodt
+                                       </cell>
+                                       <cell role="data">
+                                           6924 Brodt.
+                                       </cell>
+                                   </row>
+                               </table>
+                            </p>
+                            </div>    
+                            
+                            <div type="section">
+                            <p>
+                              <lb n="18" x="2" y="300" w="137" h="22" />    
+                                <table rows="3" cols="5">
+                                    <row role="data">
+                                        <cell cols="4">
+                                            <hi rend="italic">Item</hi> an Vnschlitt Kerzen wenigist
+                                        </cell>
+                                        <cell role="data">
+                                            100 Pfund.
+                                        </cell>
+                                    </row>
+                              <lb n="19" x="2" y="323" w="137" h="13" />       
+                                    <row role="data">
+                                        <cell role="data">
+                                            — —    
+                                        </cell>
+                                        <cell role="data">
+                                            gesottnem Anken
+                                        </cell>
+                                        <cell role="data">
+                                            600
+                                            <choice>
+                                                <abbr>Pf.</abbr>
+                                                <expan>Pfund</expan>
+                                            </choice>                                          
+                                        </cell>
+                                        <cell cols="2">
+                                            }
+                                        </cell>
+                                        <cell cols="2">
+                                            1165
+                                            <choice>
+                                                <abbr>Pf.</abbr>
+                                                <expan>Pfund</expan>
+                                            </choice>
+                                        </cell>
+                                    </row>
+                                <lb n="20" x="2" y="336" w="137" h="7" />   
+                                    <row role="data">
+                                        <cell role="data">
+                                            — —
+                                        </cell>
+                                        <cell role="data">
+                                            frischem
+                                        </cell>
+                                        <cell role="data">
+                                            — — —
+                                        </cell>
+                                        <cell role="data">
+                                            565
+                                            <choice>
+                                                <abbr>Pf.</abbr>
+                                                <expan>Pfund</expan>
+                                            </choice>
+                                        </cell>
+                                    </row>
+                                </table>                    
+                            </p>
+                            </div>    
+  
+                            <div type="section">
+                            <p>
+                              <lb n="21" x="2" y="356" w="137" h="26" />
+                                <table rows="2" cols="2">
+                                    <row role="data">
+                                        <cell role="data">
+                                            <hi rend="italic">Item</hi> an erkauften Fischen
+                                        </cell>
+                                        <cell role="data">
+                                            895 ½ 
+                                            <choice>
+                                                <abbr>Pf.</abbr>
+                                                <expan>Pfund</expan>
+                                            </choice>
+                                        </cell>
+                                    </row>
+                                  <lb n="22" x="2" y="382" w="137" h="11" />
+                                    <row role="data">
+                                        <cell role="data">
+                                            — —
+                                            <add>
+                                                grüene Albelin
+                                            </add>
+                                        </cell>
+                                        <cell role="data">
+                                            2888 Stuk
+                                            <del>
+                                                grüene Albelin
+                                            </del>
+                                        </cell>
+                                    </row>
+                                </table>                         
+                            </p>
+                            </div>
+                        
+                            <div type="section">
+                            <p>
+                              <lb n="23" x="2" y="393" w="137" h="18" />
+                                <table rows="3" cols="2">
+                                    <row role="data">
+                                        <cell role="data">
+                                            <hi rend="italic">Item</hi> an Geflügel Capaunen
+                                        </cell>
+                                        <cell role="data">
+                                            57 Stuk
+                                        </cell>
+                                    </row>
+                              <lb n="24" x="2" y="411" w="137" h="13" />       
+                                    <row role="data">
+                                        <cell role="data">
+                                            — welche Hennen vnnd Hanen
+                                        </cell>
+                                        <cell role="data">
+                                            53
+                                            <choice>
+                                                <abbr>St.</abbr>
+                                                <expan>Stuk</expan>
+                                            </choice>
+                                        </cell>
+                                    </row>
+                                <lb n="25" x="2" y="425" w="137" h="13" />       
+                                    <row role="data">
+                                        <cell role="data">
+                                            — Gänß — — — —  
+                                        </cell>
+                                        <cell role="data">
+                                            6
+                                            <choice>
+                                                <abbr>St.</abbr>
+                                                <expan>Stuk</expan>
+                                            </choice>
+                                        </cell>
+                                    </row>
+                                </table>                     
+                            </p>
+                            </div>    
+
+            <!-- nachfolgendes von Reto übernommen -->
+                    <secFol><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</secFol>
+                </div>         
+            </div>          
+            </div>
+        </body>
+    </text>
+</TEI>
+    
+    
+    
+   
+    
