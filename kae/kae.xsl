@@ -6,6 +6,7 @@
     
     <xsl:template match="ns:TEI">
         <html xmlns="http://www.w3.org/1999/xhtml">
+            <link rel="stylesheet" type="text/css" href="../includes/kae.css" media="all"/>
             <head>
                 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <title>
@@ -13,7 +14,29 @@
                 </title>
             </head>
             <body>
-                <xsl:apply-templates select="ns:text/ns:body"/>
+                <div id="header">
+                    <div id="home">
+                        <a href="../index.html"><img id="logo" src="../scans/KAE_A_HB_6-0350.jpg" alt="HOME"/></a>
+                    </div>
+                    <div id="title">
+                        <h1>
+                            Einsiedler Klostertagebuch
+                        </h1>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <div id="transcription">
+                        <xsl:apply-templates select="ns:text/ns:body"/>
+                    </div>
+                    <div id="facsimile">
+                        <img id="scan">
+                            <xsl:attribute name="src">
+                                ../scans/<xsl:value-of select="ns:text/ns:body/ns:div/ns:div/ns:pb[@facs]"/>
+                            </xsl:attribute>
+                        </img>
+                    </div>
+                </div>
             </body>
         </html>
     </xsl:template>
@@ -27,9 +50,9 @@
     </xsl:template>
     
     <xsl:template match="ns:div/ns:div/ns:div/ns:head">
-        <h4>
+        <span style="font-weight:bold">
             <xsl:apply-templates/>
-        </h4>
+        </span>
     </xsl:template>
     
     <xsl:template match="ns:body">
@@ -37,15 +60,22 @@
     </xsl:template>
 
     <xsl:template match="ns:p">
-        <xsl:apply-templates/>
+        <p>
+            <xsl:apply-templates/>
+        </p>
     </xsl:template>
     
+    <!-- line and page breaks -->
     <xsl:template match="ns:lb">
         <br/>
     </xsl:template>
     
     <xsl:template match="ns:div/ns:lb[1]|ns:label/ns:lb[1]|ns:item/ns:lb[1]|ns:head/ns:lb[1]|ns:p/ns:lb[1]|ns:fw/ns:lb[1]">
-        <!-- now new line immediately in a new div|label|item|head|p|fw -->
+        <!-- now new line immediately in a new div|label|item|head|p|fw|cell -->
+    </xsl:template>
+    
+    <xsl:template match="ns:table/ns:lb">
+        <!-- now new line in a table -->
     </xsl:template>
     
     <xsl:template match="ns:pb">
@@ -65,10 +95,14 @@
         </u>
     </xsl:template>
     
-    <xsl:template match="ns:del[@rend='overstrike']">
+    <xsl:template match="ns:del">
         <span style="text-decoration: line-through;">
             <xsl:apply-templates/>
         </span>
+    </xsl:template>
+    
+    <xsl:template match="ns:add">
+        <xsl:apply-templates/>
     </xsl:template>
     
     <xsl:template match="ns:foreign">
@@ -79,6 +113,15 @@
     
     <xsl:template match="ns:gloss">
         <!-- uebersetzungen koennten hier stehen -->   
+    </xsl:template>
+    
+    <xsl:template match="ns:choice">
+        <div class="abbr" style="display: inline-block">
+            <xsl:apply-templates select="ns:abbr"/>
+        </div>
+        <div class="expan" style="display: none;">
+            <xsl:apply-templates select="ns:expan"/>
+        </div>
     </xsl:template>
     
     <!-- rand und titel -->
@@ -94,7 +137,7 @@
         </div>
     </xsl:template>
     
-    <xsl:template match="ns:secFol">
+    <xsl:template match="ns:fw[@type='catch']">
         <div style="width: 100%; text-align: right;">
             <xsl:apply-templates/>
         </div>
@@ -131,6 +174,24 @@
     
     <xsl:template match="ns:cell">
         <td>
+            <xsl:apply-templates/>
+        </td>
+    </xsl:template>
+    
+    <xsl:template match="ns:cell[@rows]">
+        <td>
+            <xsl:attribute name="rowspan">
+                <xsl:value-of select="@rows"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </td>
+    </xsl:template>
+    
+    <xsl:template match="ns:cell[@cols]">
+        <td>
+            <xsl:attribute name="colspan">
+                <xsl:value-of select="@cols"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </td>
     </xsl:template>

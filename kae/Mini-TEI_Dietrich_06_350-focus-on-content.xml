@@ -31,7 +31,12 @@
                     
                     <fw type="header" place="top-right">
                         <lb n="2" x="143" y="36" w="137" h="16" />
-                        <foreign rend="italic" xml:id="hb6-0350-aa" xml:lang="lat">Ded[icatio] Angel[ica]</foreign>
+                        <foreign rend="italic" xml:id="hb6-0350-aa" xml:lang="lat">
+                            <choice>
+                                <abbr>Ded. Angel.</abbr>
+                                <expan>Dedicatio Angelica</expan>
+                            </choice>
+                        </foreign>
                         <gloss target="#hb6-0350-aa" xml:lang="de">Engelweihe</gloss>
                     </fw>
                     <fw type="header" place="top-right">
@@ -58,27 +63,51 @@
                                     </add>
                                 </label>
                                 <item>
-                                    19 Eÿm[er].
+                                    19 <choice>
+                                        <abbr>Eÿm.</abbr>
+                                        <expan>Eÿmer</expan>
+                                    </choice>
                                 </item>
                                 <label>
                                     <lb n="4" x="2" y="79" w="137" h="11" />— — — — gemeiner Tisch-Wein 
                                 </label>
                                 <item>
-                                    20 Eym[er].  
+                                    20 
+                                    <choice>
+                                        <abbr>Eym.</abbr>
+                                        <expan>Eymer</expan>
+                                    </choice>  
                                 </item>
                                 <label>
                                     <lb n="5" x="2" y="91" w="137" h="7" />— — — — — <hi rend="italic">Communion</hi> Wein —
                                 </label>
                                 <item>
-                                    14 Eÿm[er].                                
+                                    14 
+                                    <choice>
+                                        <abbr>Eÿm.</abbr>
+                                        <expan>Eÿmer</expan>
+                                    </choice>                                
                                 </item>
                             </list>
                             <lb n="6" x="2" y="98" w="137" h="17" />
-                            <foreign rend="italic" xml:id="hb6-0350-ac" xml:lang="lat">Summa Sum[marum]</foreign>
+                            <foreign rend="italic" xml:id="hb6-0350-ac" xml:lang="lat">
+                                <choice>
+                                    <abbr>Summ<hi rend="superscript">arum</hi></abbr>
+                                    <expan>Summarum</expan>
+                                </choice>
+                            </foreign>
                             <gloss target="#hb6-0350-ac" xml:lang="de">insgesamt</gloss> 
                             alles Weins,
-                            <lb n="7" x="2" y="115" w="137" h="12" />so in der Engelw[eihe]. verbraucht
-                            <lb n="8" x="2" y="127" w="137" h="18" />ist worden, ist — — — 122 Eÿm[er]. 20 Mass.
+                            <lb n="7" x="2" y="115" w="137" h="12" />so in der 
+                            <choice>
+                                <abbr>Engelw.</abbr>
+                                <expan>Engelweihe</expan>
+                            </choice> verbraucht
+                            <lb n="8" x="2" y="127" w="137" h="18" />ist worden, ist — — — 122 
+                            <choice>
+                                <abbr>Eÿm.</abbr>
+                                <expan>Eÿmer</expan>
+                            </choice> 20 Mass.
                         </p>
                         </div>
                         <div type="section">
@@ -150,26 +179,42 @@
                                 Kerzen wenigist 100 Pfund.
                                 <list rend="braced">
                                     <head>
-                                        <lb n="22" x="2" y="336" w="137" h="7" />1165 Pf[und]
+                                        <lb n="22" x="2" y="336" w="137" h="7" />1165
+                                        <choice>
+                                            <abbr>Pf.</abbr>
+                                            <expan>Pfund</expan>
+                                        </choice>
                                     </head>
                                     <label>
                                         <lb n="21" x="2" y="323" w="137" h="13" />— — gesottnem Anken 
                                     </label>
                                     <item>
-                                        600 Pf[und]
+                                        600 
+                                        <choice>
+                                            <abbr>Pf.</abbr>
+                                            <expan>Pfund</expan>
+                                        </choice>
                                     </item>
                                     <label>
                                         <lb n="23" x="2" y="343" w="137" h="12" />— —frischem Anken — — —
                                     </label>
                                     <item>
-                                        565 Pf[und]
+                                        565 
+                                        <choice>
+                                            <abbr>Pf.</abbr>
+                                            <expan>Pfund</expan>
+                                        </choice>
                                     </item>
                                 </list>
                             </p>
                         </div>    
                         <div type="section">
                             <p>
-                                <lb n="24" x="2" y="356" w="137" h="26" />Item an erkauften Fischen 895 ½ Pf[und]
+                                <lb n="24" x="2" y="356" w="137" h="26" />Item an erkauften Fischen 895 ½ 
+                                <choice>
+                                    <abbr>Pf.</abbr>
+                                    <expan>Pfund</expan>
+                                </choice>
                                 <list>
                                     <item>
                                         <lb n="25" x="2" y="382" w="137" h="11" />— — — — — 2888 Stuk 
@@ -199,18 +244,26 @@
                                         <gloss target="#hb6-0350-eb" cRef="Brockhaus (Bd. 2, S. 969)">Truthühner.</gloss>
                                     </label>
                                     <item>
-                                        53 St[uk].
+                                        53 
+                                        <choice>
+                                            <abbr>St.</abbr>
+                                            <expan>Stuk</expan>
+                                        </choice>
                                     </item>
                                     <label>
                                         <lb n="28" x="2" y="425" w="137" h="13" />— Gänß — — — —
                                     </label>
                                     <item>
-                                        6  St[uk].
+                                        6  
+                                        <choice>
+                                            <abbr>St.</abbr>
+                                            <expan>Stuk</expan>
+                                        </choice>
                                     </item>
                                 </list>
                             </p>
                         </div>
-                        <secFol><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</secFol>
+                        <fw type="catch" place="bottom-right"><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</fw>
                     </div>         
                 </div>          
             </div>

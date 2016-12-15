@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="kae.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -71,14 +72,11 @@
                                                    Darunder ein Eÿmer Mesßwin
                                                </add>
                                            </cell>
-                                           <cell cols="3">
+                                           <cell rows="3">
                                                }
                                            </cell>
-                                           <cell cols="3">
+                                           <cell rows="3">
                                                53
-                                               <add>
-                                                   Eÿmer <!-- Eingriff durch Edition -->
-                                               </add>
                                            </cell>
                                        </row>
                                        
@@ -122,7 +120,7 @@
                                        
                                        <lb n="5" x="2" y="98" w="137" h="17" />
                                        <row role="data">
-                                           <cell rows="4">                                               
+                                           <cell cols="4">                                               
                                                    <hi rend="italic">Summa 
                                                    <choice>
                                                        <abbr>Summ<hi rend="superscript">arum</hi></abbr>
@@ -158,7 +156,7 @@
                             <p>
                                 <lb n="9" x="2" y="163" w="137" h="16" />
                                 
-                                <table rows="4" cols="3">
+                                <table rows="3" cols="4">
                                       <row role="data">
                                           <cell role="data">
                                               Weisses verbachen
@@ -166,10 +164,10 @@
                                           <cell role="data">
                                               43 Mütt
                                           </cell>
-                                          <cell cols="3">
+                                          <cell rows="3">
                                               }
                                           </cell>
-                                          <cell cols="3">
+                                          <cell rows="3">
                                               120 Mütt
                                           </cell>
                                       </row>
@@ -196,14 +194,16 @@
                             
                             <div type="section">
                             <p>
-                               <lb n="12" x="2" y="209" w="137" h="20" />
-                                Das Weissgebachen hatt geben, vnnd seÿnd ver-
-                               
-                               <lb n="13" x="2" y="230" w="137" h="15" />
-                               
-                               <table rows="3" cols="2">
+                               <table rows="4" cols="3">
+                                   <lb n="12" x="2" y="209" w="137" h="20" />
                                    <row role="data">
-                                       <cell role="data">
+                                       <cell role="data" cols="3">
+                                           Das Weissgebachen hatt geben, vnnd seÿnd ver-
+                                       </cell>
+                                   </row>
+                                   <lb n="13" x="2" y="230" w="137" h="15" />
+                                   <row>    
+                                       <cell>   
                                            braucht
                                        </cell>
                                        <cell role="data">
@@ -227,7 +227,7 @@
                                    </row>  
                                 <lb n="15" x="2" y="257" w="137" h="15" />         
                                    <row role="data">
-                                       <cell rows="3">
+                                       <cell cols="3">
                                            Schwarz Schirmer Brodt, seÿnd etwas 
                                 <lb n="16" x="2" y="272" w="137" h="13" />      
                                            grösser als Knechtenbrodt seÿnd in obige gerechnet.
@@ -254,8 +254,11 @@
                               <lb n="18" x="2" y="300" w="137" h="22" />    
                                 <table rows="3" cols="5">
                                     <row role="data">
-                                        <cell cols="4">
-                                            <hi rend="italic">Item</hi> an Vnschlitt Kerzen wenigist
+                                        <cell>
+                                            <hi rend="italic">Item</hi> an
+                                        </cell>
+                                        <cell cols="3">
+                                            Vnschlitt Kerzen wenigist
                                         </cell>
                                         <cell role="data">
                                             100 Pfund.
@@ -276,10 +279,10 @@
                                                 <expan>Pfund</expan>
                                             </choice>                                          
                                         </cell>
-                                        <cell cols="2">
+                                        <cell rows="2">
                                             }
                                         </cell>
-                                        <cell cols="2">
+                                        <cell rows="2">
                                             1165
                                             <choice>
                                                 <abbr>Pf.</abbr>
@@ -293,10 +296,7 @@
                                             — —
                                         </cell>
                                         <cell role="data">
-                                            frischem
-                                        </cell>
-                                        <cell role="data">
-                                            — — —
+                                            frischem — — —
                                         </cell>
                                         <cell role="data">
                                             565
@@ -313,10 +313,13 @@
                             <div type="section">
                             <p>
                               <lb n="21" x="2" y="356" w="137" h="26" />
-                                <table rows="2" cols="2">
+                                <table rows="2" cols="3">
                                     <row role="data">
                                         <cell role="data">
-                                            <hi rend="italic">Item</hi> an erkauften Fischen
+                                            <hi rend="italic">Item</hi> an 
+                                         </cell>
+                                        <cell>
+                                            erkauften Fischen
                                         </cell>
                                         <cell role="data">
                                             895 ½ 
@@ -330,15 +333,12 @@
                                     <row role="data">
                                         <cell role="data">
                                             — —
-                                            <add>
-                                                grüene Albelin
-                                            </add>
+                                        </cell>
+                                        <cell>
+                                            — — — 
                                         </cell>
                                         <cell role="data">
-                                            2888 Stuk
-                                            <del>
-                                                grüene Albelin
-                                            </del>
+                                            2888 Stuk grüene Albelin
                                         </cell>
                                     </row>
                                 </table>                         
@@ -351,7 +351,10 @@
                                 <table rows="3" cols="2">
                                     <row role="data">
                                         <cell role="data">
-                                            <hi rend="italic">Item</hi> an Geflügel Capaunen
+                                            <hi rend="italic">Item</hi> an
+                                        </cell>
+                                        <cell>
+                                            Gflügel Capaunen
                                         </cell>
                                         <cell role="data">
                                             57 Stuk
@@ -360,7 +363,10 @@
                               <lb n="24" x="2" y="411" w="137" h="13" />       
                                     <row role="data">
                                         <cell role="data">
-                                            — welche Hennen vnnd Hanen
+                                            — 
+                                        </cell>
+                                        <cell>
+                                            Welsche Hennen vnnd Hanen
                                         </cell>
                                         <cell role="data">
                                             53
@@ -373,7 +379,10 @@
                                 <lb n="25" x="2" y="425" w="137" h="13" />       
                                     <row role="data">
                                         <cell role="data">
-                                            — Gänß — — — —  
+                                            — 
+                                        </cell>
+                                        <cell>
+                                            Gänß — — — —  
                                         </cell>
                                         <cell role="data">
                                             6
@@ -386,11 +395,10 @@
                                 </table>                     
                             </p>
                             </div>    
-
-            <!-- nachfolgendes von Reto übernommen -->
-                    <secFol><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</secFol>
-                </div>         
-            </div>          
+                        <fw type="catch" place="bottom-right"><lb n="29" x="2" y="438" w="137" h="52" />Parnisen</fw>
+            <!-- nachfolgendes von Reto übernommen -->       
+                    </div>
+                </div>          
             </div>
         </body>
     </text>

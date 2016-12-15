@@ -1,0 +1,86 @@
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: verdana, 'bitstream vera sans', arial, helvetica, sans-serif;
+	font-size: 0.75em;
+    min-width: 64.167em;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4 { font-weight: 800; }
+h5, h6 { font-weight: 400; }
+h1 {
+	margin-top: 0.833em;
+	padding-top: 0;
+	font-size: 1.667em;
+}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.167em; }
+h4, h5 { font-size: 1em; }
+h6 { font-size: 0.917em; }
+
+#header {
+    position: relative;
+	width: 100%;
+	background-color: green;
+	color: #000000;
+}
+
+#home {
+    display: inline-block;
+    vertical-align:middle;
+}
+
+#logo {
+    height: 10em;
+    padding: 5px;
+}
+
+#title {
+    display: inline-block;
+    padding: 15px; 
+    vertical-align:middle;
+    color: #ffffff;
+}
+
+#maintext {
+   width: 60em;
+   margin: 0 auto 0 auto;
+   padding: 2em 0 0 0;
+	text-align: justify;
+}
+
+#footer {
+	margin: 2em auto 1.25em auto;
+	text-align: center
+}
+
+#footer .attribution {
+   font-size: 0.833em;
+	width: 50em;
+   line-height: 2.25em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	  margin: 5px auto;
+}
+
+#transcription {
+    width: 45%;
+    padding: 10px;
+    font-size: 12pt;
+    display: inline-block;
+}
+
+#facsimile {
+    width: 45%;
+    padding: 10px;
+    display: inline-block;
+}
+
+#scan {
+    width: auto;
+}
+
+.clear {
+	clear: both;
+}

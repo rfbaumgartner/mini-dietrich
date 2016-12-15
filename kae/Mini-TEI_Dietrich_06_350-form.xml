@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="kae.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
@@ -157,7 +158,7 @@
                             <p>
                                 <lb n="9" x="2" y="163" w="137" h="16" />
                                 
-                                <table rows="4" cols="3">
+                                <table rows="3" cols="4">
                                       <row role="data">
                                           <cell role="data">
                                               Weisses verbachen
@@ -165,10 +166,10 @@
                                           <cell role="data">
                                               43 Mütt
                                           </cell>
-                                          <cell cols="3">
+                                          <cell rows="3">
                                               }
                                           </cell>
-                                          <cell cols="3">
+                                          <cell rows="3">
                                               120 Mütt
                                           </cell>
                                       </row>
