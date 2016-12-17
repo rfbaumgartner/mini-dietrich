@@ -16,7 +16,7 @@
             <body>
                 <div id="header">
                     <div id="home">
-                        <a href="../index.html"><img id="logo" src="../scans/KAE_A_HB_6-0350.jpg" alt="HOME"/></a>
+                        <a href="../index.html"><img id="logo" src="../scans/KAE_A_HB_6-0350.jpg" alt="HOME" title="HOME"/></a>
                     </div>
                     <div id="title">
                         <h1>
@@ -32,7 +32,7 @@
                     <div id="facsimile">
                         <img id="scan">
                             <xsl:attribute name="src">
-                                ../scans/<xsl:value-of select="ns:text/ns:body/ns:div/ns:div/ns:pb[@facs]"/>
+                                ../scans/<xsl:value-of select="ns:text/ns:body/ns:div/ns:div/ns:pb/@facs"/>
                             </xsl:attribute>
                         </img>
                     </div>
@@ -95,6 +95,12 @@
         </u>
     </xsl:template>
     
+    <xsl:template match="ns:hi[@rend='superscript']">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+    
     <xsl:template match="ns:del">
         <span style="text-decoration: line-through;">
             <xsl:apply-templates/>
@@ -107,21 +113,48 @@
     
     <xsl:template match="ns:foreign">
         <span style="font-style:italic">
-        <xsl:apply-templates/>
+            <xsl:apply-templates/>
         </span>
     </xsl:template>
     
-    <xsl:template match="ns:gloss">
-        <!-- uebersetzungen koennten hier stehen -->   
+    <xsl:template match="ns:term">
+        <xsl:apply-templates/>
     </xsl:template>
     
+    <xsl:template match="ns:gloss"/>
+
+<!--
+        This is a try to add titles to foreign words, without luck.
+        
+    <xsl:template match="ns:gloss[preceding::ns:term]">
+        <span style="text-decoration-line: underline; text-decoration-style: dotted;">
+            <xsl:apply-templates select="preceding-sibling::ns:term[1]"/>
+            
+            <xsl:attribute name="title">
+                <xsl:apply-templates/>
+            </xsl:attribute>
+        </span> 
+    </xsl:template>
+    
+    <xsl:template match="ns:gloss[preceding::ns:foreign]">
+        <span style="text-decoration-line: underline; text-decoration-style: dotted;">
+            <xsl:apply-templates select="preceding-sibling::ns:foreign[1]"/>
+            
+            <xsl:attribute name="title">
+                <xsl:apply-templates/>
+            </xsl:attribute>
+        </span> 
+    </xsl:template>
+-->
+    
     <xsl:template match="ns:choice">
-        <div class="abbr" style="display: inline-block">
+        <span style="text-decoration-line: underline; text-decoration-style: dotted;">
+            <xsl:attribute name="title">
+                <xsl:apply-templates select="ns:expan"/>
+            </xsl:attribute>
+            
             <xsl:apply-templates select="ns:abbr"/>
-        </div>
-        <div class="expan" style="display: none;">
-            <xsl:apply-templates select="ns:expan"/>
-        </div>
+        </span> 
     </xsl:template>
     
     <!-- rand und titel -->
@@ -230,7 +263,7 @@
     <xsl:template match="ns:list/ns:item">
         <tr>
             <td>
-                <xsl:apply-templates select="preceding-sibling::*[1]"/>
+                <xsl:apply-templates select="preceding-sibling::ns:label[1]"/>
             </td>
             <td>
                 <xsl:apply-templates/>

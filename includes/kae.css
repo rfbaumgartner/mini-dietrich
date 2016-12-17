@@ -69,16 +69,19 @@ h6 { font-size: 0.917em; }
     padding: 10px;
     font-size: 12pt;
     display: inline-block;
+    vertical-align: middle;
 }
 
 #facsimile {
     width: 45%;
     padding: 10px;
     display: inline-block;
+    vertical-align:middle;
 }
 
 #scan {
-    width: auto;
+    width: 100%;
+    vertical-align:middle;
 }
 
 .clear {
