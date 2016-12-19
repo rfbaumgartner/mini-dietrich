@@ -102,14 +102,13 @@
                                         </cell>
                                         <cell>
                                             53
-                                            <supplied reason="omitted-in-original">
-                                                Eÿmer <!-- hinzugefügt durch Edition, besser kein "add" -->
-                                            </supplied>
                                         </cell>
                                     </row>
                                     <row>
                                         <cell>
                                             — — — — —
+                                        </cell>
+                                        <cell>
                                             <hi rend="italic">Communion</hi> Wein—
                                         </cell>
                                         <cell>
@@ -227,7 +226,7 @@
                                    </row>  
                                 <lb n="15" x="2" y="257" w="137" h="15" />         
                                    <row role="data">
-                                       <cell rows="3">
+                                       <cell cols="3">
                                            Schwarz Schirmer Brodt, seÿnd etwas 
                                 <lb n="16" x="2" y="272" w="137" h="13" />      
                                            grösser als Knechtenbrodt seÿnd in obige gerechnet.
@@ -254,7 +253,7 @@
                               <lb n="18" x="2" y="300" w="137" h="22" />    
                                 <table rows="3" cols="5">
                                     <row role="data">
-                                        <cell cols="4">
+                                        <cell cols="5">
                                             <hi rend="italic">Item</hi> an Vnschlitt Kerzen wenigist
                                         </cell>
                                         <cell role="data">
@@ -267,7 +266,10 @@
                                             — —    
                                         </cell>
                                         <cell role="data">
-                                            gesottnem Anken
+                                            gesottnem 
+                                        </cell>
+                                        <cell role="data">
+                                            Anken
                                         </cell>
                                         <cell role="data">
                                             600
@@ -276,10 +278,10 @@
                                                 <expan>Pfund</expan>
                                             </choice>                                          
                                         </cell>
-                                        <cell cols="2">
+                                        <cell rows="2">
                                             }
                                         </cell>
-                                        <cell cols="2">
+                                        <cell rows="2">
                                             1165
                                             <choice>
                                                 <abbr>Pf.</abbr>
@@ -330,15 +332,9 @@
                                     <row role="data">
                                         <cell role="data">
                                             — —
-                                            <add>
-                                                grüene Albelin
-                                            </add>
                                         </cell>
                                         <cell role="data">
-                                            2888 Stuk
-                                            <del>
-                                                grüene Albelin
-                                            </del>
+                                            2888 Stuk grüene Albelin
                                         </cell>
                                     </row>
                                 </table>                         
