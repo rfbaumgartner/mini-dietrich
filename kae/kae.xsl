@@ -30,11 +30,19 @@
                         <xsl:apply-templates select="ns:text/ns:body"/>
                     </div>
                     <div id="facsimile">
-                        <img id="scan">
-                            <xsl:attribute name="src">
-                                ../scans/<xsl:value-of select="ns:text/ns:body/ns:div/ns:div/ns:pb/@facs"/>
-                            </xsl:attribute>
-                        </img>
+                        <div>
+                            <img id="scan">
+                                <xsl:attribute name="src">
+                                     ../scans/<xsl:value-of select="ns:text/ns:body/ns:div/ns:div/ns:pb/@facs"/>
+                                </xsl:attribute>
+                            </img>
+                        </div>
+                        <div>
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/ch/">
+                                <img src="http://i.creativecommons.org/l/by-nc-sa/2.5/ch/80x15.png"></img>
+                            </a> 
+                            Einsiedler Klostertagebuch von Pater Joseph Dietrich: <a href="http://www.klosterarchiv.ch/e-archiv_archivalien_detail.php?signatur=KAE,%20A.HB.6&amp;start=350">KAE, A.HB.6,  S. 339</a>
+                        </div>
                     </div>
                 </div>
             </body>
